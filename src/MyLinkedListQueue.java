@@ -6,6 +6,13 @@ public class MyLinkedListQueue<E> {
     public MyLinkedListQueue(){
         arr=new LinkedList<>();
     }
-
+    public void enqueue(E element){
+        arr.addLast(element);
+    }
+    public Object dequeue(){
+        Object e=arr.getFirst();
+        arr.removeLast();
+        return e;
+    }
 
 }
