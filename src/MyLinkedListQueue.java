@@ -1,3 +1,4 @@
+import java.util.EmptyStackException;
 import java.util.NoSuchElementException;
 import java.util.LinkedList;
 
@@ -10,11 +11,17 @@ public class MyLinkedListQueue<E> {
         arr.addLast(element);
     }
     public Object dequeue(){
+        if(arr.isEmpty()){
+            throw new NoSuchElementException();
+        }
         Object e=arr.getFirst();
         arr.removeLast();
         return e;
     }
     public Object peek(){
+        if(arr.isEmpty()){
+            throw new NoSuchElementException();
+        }
         return arr.getFirst();
     }
     public boolean isEmpty(){

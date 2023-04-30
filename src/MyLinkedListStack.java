@@ -9,11 +9,17 @@ public class MyLinkedListStack<E>  {
         arr.addFirst(element);
     }
     public Object pop(){
+        if (arr.isEmpty()){
+            throw new EmptyStackException();
+        }
         Object e=arr.getFirst();
         arr.removeFirst();
         return e;
     }
     public Object peek(){
+        if(arr.isEmpty()){
+            throw new EmptyStackException();
+        }
         return arr.getFirst();
     }
     public boolean isEmpty(){
