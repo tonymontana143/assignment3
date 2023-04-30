@@ -17,7 +17,12 @@ public class MyLinkedListStack<E>  {
         return arr.getFirst();
     }
     public boolean isEmpty(){
-
+        if(arr.isEmpty()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public int size(){
         return arr.size();
