@@ -18,4 +18,7 @@ public class MyLinkedListQueue<E> {
         return arr.getFirst();
     }
 
+    public int size(){
+        return arr.size();
+    }
 }
