@@ -14,5 +14,8 @@ public class MyLinkedListQueue<E> {
         arr.removeLast();
         return e;
     }
+    public Object peek(){
+        return arr.getFirst();
+    }
 
 }
