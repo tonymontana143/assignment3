@@ -8,5 +8,10 @@ public class MyLinkedListStack<E>  {
     public void push(E element){
         arr.addFirst(element);
     }
+    public Object pop(){
+        Object e=arr.getFirst();
+        arr.removeFirst();
+        return e;
+    }
 
 }
