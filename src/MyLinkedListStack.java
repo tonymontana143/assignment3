@@ -1,5 +1,8 @@
 import java.util.EmptyStackException;
 import java.util.LinkedList;
 public class MyLinkedListStack<E>  {
-    private MyLinkedListStack<E> arr;
+    private LinkedList<E> arr;
+    public MyLinkedListStack(){
+        arr=new LinkedList<>();
+    }
 }
