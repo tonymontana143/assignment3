@@ -13,5 +13,8 @@ public class MyLinkedListStack<E>  {
         arr.removeFirst();
         return e;
     }
+    public Object peek(){
+        return arr.getFirst();
+    }
 
 }
