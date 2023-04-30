@@ -16,5 +16,10 @@ public class MyLinkedListStack<E>  {
     public Object peek(){
         return arr.getFirst();
     }
+    public boolean isEmpty(){
 
+    }
+    public int size(){
+        return arr.size();
+    }
 }
